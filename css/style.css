@@ -24,9 +24,9 @@ body {
 /* Utilities  */
 
 .list {
+  list-style: none;
   padding: 0;
   margin: 0;
-  list-style: none;
 }
 
 .link {
@@ -34,7 +34,7 @@ body {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -54,6 +54,8 @@ body {
 }
 
 .logo {
+  margin-right: 93px;
+
   color: var(--title-text-color);
   font-family: Raleway;
 
@@ -63,6 +65,31 @@ body {
 }
 
 /* Site nav */
+
+.main-nav,
+.site-nav,
+.auth-nav {
+  display: flex;
+  align-items: center;
+}
+
+.auth-nav {
+  margin-left: auto;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .site-nav .link {
   color: var(--title-text-color);
@@ -99,6 +126,14 @@ body {
   text-align: center;
 }
 
+.hero-align {
+  margin-left: auto;
+  margin-right: auto;
+  width: 643px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -117,6 +152,10 @@ body {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+
   cursor: pointer;
   font-family: inherit;
   font-weight: 700;
@@ -128,6 +167,20 @@ body {
 .button-hero .link:hover,
 .button-hero .link:focus {
   background-color: var(--background-button);
+}
+
+.button-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.button-align {
+  margin-right: 8px;
+}
+
+.button-align:last-of-type {
+  margin-right: 0;
 }
 
 .button-nav .link:hover,
@@ -145,6 +198,9 @@ body {
   line-height: 1.62;
   cursor: pointer;
   font-family: inherit;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .button-first {
@@ -154,7 +210,18 @@ body {
 
 /* Features */
 
+.features-list {
+  display: flex;
+}
+
+.features-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-right: 30px;
+}
+
 .features-title {
+  margin-top: 0;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -162,6 +229,8 @@ body {
 }
 
 .features-description {
+  margin-bottom: 0;
+
   color: var(--lead-text-color);
 
   font-weight: 400;
@@ -170,6 +239,10 @@ body {
 }
 
 /* Work */
+
+.work-section {
+  padding-top: 0;
+}
 
 .section-title {
   margin-top: 0;
@@ -180,10 +253,23 @@ body {
   text-align: center;
 }
 
+.work-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Team section */
 
 .team-section {
+  display: flex;
+  padding-top: 0;
+
   background-color: var(--secondary-background-color);
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .team-title {
@@ -202,11 +288,17 @@ body {
 /* Footer */
 
 .footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--background-color);
 }
 
 .footer-logo {
   color: var(--primary-white-color);
+
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .adress-info,
@@ -222,9 +314,20 @@ body {
 
 .contacts {
   color: var(--footer-text-color);
+
+  display: block;
+  margin-top: 9px;
 }
 
 /* Projects */
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  margin-right: 30px;
+  flex-basis: calc(100% / 3);
+}
 
 .projects-title {
   text-decoration: none;
