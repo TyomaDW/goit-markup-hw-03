@@ -202,8 +202,8 @@ body {
   letter-spacing: 0.06em;
 }
 
-.button-hero .link:hover,
-.button-hero .link:focus {
+.button-hero:hover,
+.button-hero:focus {
   background-color: var(--background-button);
 }
 
